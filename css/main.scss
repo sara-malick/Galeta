@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+
+  .btn {
+    border: 2px solid black;
+    border-radius: 0;
+    padding: 0.375rem 2rem;
+    transition: 0.5s ease;
+
+    &:hover {
+      background-color: black;
+      color: white;
+    }
+  }
+
+  .btn-3 {
+    border: 2px solid white;
+    border-radius: 0;
+    padding: 0.375rem 2rem;
+    transition: 0.5s ease;
+    color: white;
+
+    &:hover {
+      background-color: white;
+      color: black;
+    }
+  }
+
+  .btn-2 {
+    border: none;
+
+    &:hover {
+      background-color: #f9db79;
+      color: black;
+    }
+  }
+
+  .subheading {
+    color: white;
+    font-size: 38px;
+    font-weight: normal;
+    letter-spacing: 3px;
+  }
+
+  .heading {
+    color: white;
+    font-size: 150px;
+    font-weight: 700;
+    letter-spacing: 7px;
+    margin-bottom: 1.3rem;
+  }
+
+  .title {
+    letter-spacing: 2px;
+    font-weight: normal;
+  }
+
+  .subtitle {
+    font-family: "Satisfy", cursive;
+  }
+}
+
+nav {
+  background-color: #f9db79;
+
+  .navbar-nav {
+    li {
+      a {
+        color: black;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .navbar-brand {
+    font-family: "Satisfy", cursive;
+    font-weight: 600;
+    font-size: 40px;
+  }
+
+  .navbar-toggler {
+    border: none;
+    outline: none;
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
+
+.home {
+  background: #f9db79 url(../images/one.webp);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 20rem 0;
+  background-position: center;
+  background-position-y: 100px;
+
+  .icecream-text {
+    margin-top: 5rem;
+  }
+}
+
+.flavours {
+  overflow-x: hidden;
+  .left {
+    background: #e7dcca url(../images/two.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 70%;
+    padding: 15rem 0;
+  }
+
+  .right {
+    padding: 8rem 4rem;
+  }
+}
+
+.dairy {
+  background: #ffbfb3 url(../images/three.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  background-position-x: 50%;
+  padding: 10rem 0;
+}
+
+.place {
+  overflow-x: hidden;
+  .left {
+    padding: 8rem 4rem;
+  }
+
+  .right {
+    background: #e7dcca url(../images/four.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 70%;
+    padding: 15rem 0;
+  }
+}
+
+.deliver {
+  background: #90d1ad url(../images/five.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  background-position-x: 50%;
+  padding: 10rem 0;
+}
+
+.dessert {
+  overflow-x: hidden;
+
+  .left {
+    background: url(../images/six.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 70%;
+    padding: 15rem 0;
+  }
+
+  .right {
+    padding: 8rem 4rem;
+  }
+}
+
+.icecream {
+  background: url(../images/seven.jpg);
+  background-size: contain;
+  background-attachment: fixed;
+}
+
+.post {
+  overflow-x: hidden;
+
+  .row {
+    .col-md-3 {
+      padding: 9rem 0;
+      cursor: pointer;
+    }
+
+    .post1 {
+      background: url(../images/twelve.jpg);
+      background-size: cover;
+      background-position: center center;
+    }
+
+    .post2 {
+      background: url(../images/ten.jpg);
+      background-size: cover;
+      background-position: center center;
+    }
+
+    .post3 {
+      background: url(../images/nine.webp);
+      background-size: cover;
+      background-position: center center;
+    }
+
+    .post4 {
+      background: url(../images/eleven.webp);
+      background-size: cover;
+      background-position: center center;
+    }
+  }
+}
+
+.footer {
+  letter-spacing: 1.5px;
+
+  .form-control {
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    border-radius: 0px;
+  }
+
+  .last {
+    color: rgba(255, 255, 255, 0.781);
+  }
+
+  i {
+    font-size: 1.2rem;
+    background-color: white;
+    color: black;
+    padding: 4px 8px 4px 9px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+
+  .bi-facebook {
+    &:hover {
+      color: white;
+      background-color: #4064ac;
+    }
+  }
+  .bi-whatsapp {
+    &:hover {
+      color: white;
+      background-color: #46c256;
+    }
+  }
+  .bi-instagram {
+    &:hover {
+      color: white;
+      background: linear-gradient(
+        70deg,
+        #feda75,
+        #fa7e1e,
+        #d62976,
+        #962fbf,
+        #4f5bd5
+      );
+    }
+  }
+  .bi-youtube {
+    &:hover {
+      color: white;
+      background-color: #c4302b;
+    }
+  }
+  .bi-twitter {
+    &:hover {
+      color: white;
+      background-color: #00acee;
+    }
+  }
+}
+
+@media screen and (max-width: 525px) {
+  body {
+    .heading{
+      font-size: 100px;
+    }
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: black;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
